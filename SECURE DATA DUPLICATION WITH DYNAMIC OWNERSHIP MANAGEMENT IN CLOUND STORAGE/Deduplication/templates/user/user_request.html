@@ -1,0 +1,27 @@
+{% include 'user/user_header.html' %}
+
+<div class="custom">
+    <h1>My files</h1>
+    <table>
+        <thead>
+            <tr>
+            <th>File</th>
+            <th>Date</th>
+            <th>Satus</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for row in data %}
+            <tr>
+
+                <td>{{row['filename']}}</td>
+                <td>{{row['date']}}</td>
+                <td>{{row['r_status']}}
+            </tr>
+       {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+
+{% include 'user/user_footer.html' %}

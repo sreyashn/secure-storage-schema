@@ -1,0 +1,41 @@
+{% include 'admin/admin_header.html' %}
+
+<div class="custom">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Emp_ID</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Age</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>HouseName</th>
+            <th>Place</th>
+            <th>Pincode</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for row in data %}
+            <tr>
+                <td>{{row['emp_id']}}</td>
+                <td>{{row['first_name']}}</td>
+                <td>{{row['last_name']}}</td>
+                <td>{{row['age']}}</td>
+                <td>{{row['phone']}}
+                <td>{{row['email']}}</td>
+                <td>{{row['house_name']}}</td>
+                <td>{{row['place']}}</td>
+                <td>{{row['pincode']}}</td>
+
+
+
+            </tr>
+       {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+
+{% include 'admin/admin_footer.html' %}

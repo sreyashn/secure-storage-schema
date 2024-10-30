@@ -1,0 +1,138 @@
+</div>
+
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!--footer -->
+	<footer>
+		<div class="container">
+
+			<div class="copyright mt-4">
+				<p class="copy-right text-center ">&copy; 2018 Accrue. All Rights Reserved
+
+				</p>
+			</div>
+		</div>
+	</footer>
+	<!-- //footer -->
+	<a href="#home" class="scroll" id="toTop" style="display: block;">
+		<span id="toTopHover" style="opacity: 1;"> </span>
+	</a>
+	<!-- //Custom-JavaScript-File-Links -->
+	<!-- js -->
+	<script  src="/static/web/js/jquery-2.2.3.min.js"></script>
+	<!--slider-->
+	<script src="/static/web/js/responsiveslides.min.js"></script>
+	<script>
+		$(function () {
+
+			// Slideshow 1
+			$("#slider1").responsiveSlides({
+				auto: false,
+				pager: true,
+				nav: false,
+				speed: 500,
+				namespace: "centered-btns"
+			});
+
+		});
+	</script>
+	<!--//slider-->
+	<!--pop-up-box-->
+	<link href="/static/web/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="/static/web/js/jquery.magnific-popup.js"></script>
+	<!--//pop-up-box-->
+	<script>
+		$(document).ready(function () {
+			$('.popup-with-zoom-anim').magnificPopup({
+				type: 'inline',
+				fixedContentPos: false,
+				fixedBgPos: true,
+				overflowY: 'auto',
+				closeBtnInside: true,
+				preloader: false,
+				midClick: true,
+				removalDelay: 300,
+				mainClass: 'my-mfp-zoom-in'
+			});
+
+		});
+	</script>
+	<!--//search-bar-->
+
+	<!-- carousel -->
+	<script src="/static/web/js/owl.carousel.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.owl-carousel').owlCarousel({
+				loop: true,
+				margin: 10,
+				responsiveClass: true,
+				responsive: {
+					0: {
+						items: 1,
+						nav: true
+					},
+					600: {
+						items: 1,
+						nav: false
+					},
+					900: {
+						items: 1,
+						nav: false
+					},
+					1000: {
+						items: 1,
+						nav: true,
+						loop: false,
+						margin: 20
+					}
+				}
+			})
+		})
+	</script>
+	<!-- //carousel -->
+
+	<!-- //js -->
+	<script src="/static/web/js/bootstrap.js"></script>
+	<!--/ start-smoth-scrolling -->
+	<script src="/static/web/js/move-top.js"></script>
+	<script src="/static/web/js/easing.js"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 900);
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+			/*
+									var defaults = {
+										  containerID: 'toTop', // fading element id
+										containerHoverID: 'toTopHover', // fading element hover id
+										scrollSpeed: 1200,
+										easingType: 'linear'
+									 };
+									*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<!--// end-smoth-scrolling -->
+	<!-- jQuery-Photo-filter-lightbox-Gallery-plugin -->
+	<script src="/static/web/js/jquery-1.7.2.js"></script>
+	<script src="/static/web/js/jquery.quicksand.js"></script>
+	<script src="/static/web/js/script.js"></script>
+	<script src="/static/web/js/jquery.prettyPhoto.js"></script>
+	<!-- //jQuery-Photo-filter-lightbox-Gallery-plugin -->
+
+</body>
+
+</html>

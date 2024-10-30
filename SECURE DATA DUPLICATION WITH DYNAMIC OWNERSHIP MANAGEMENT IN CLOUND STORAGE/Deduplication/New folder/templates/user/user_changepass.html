@@ -1,0 +1,17 @@
+{% include 'user/user_header.html' %}
+<center>
+<div class="ban-form text-left">
+	<h5>Change Password</h5>
+	<form action="" class="mt-4" method="post">
+        <table>
+            <tr>
+                <input class="form-control" type="text" name="username" placeholder="Username" required="" readonly value="{{data[0]['username']}}" /></tr>
+            <tr><input class="form-control" type="password" name="password" placeholder="Current Password" required="" />
+            <tr><input class="form-control" type="password" name="newpassword" placeholder="New Password" required="" /></tr>
+            <tr><input class="form-control text-uppercase" name='login' type="submit" value="Update"></tr>
+        </table>
+	</form>
+</div>
+</center>
+
+{% include 'user/user_footer.html' %}

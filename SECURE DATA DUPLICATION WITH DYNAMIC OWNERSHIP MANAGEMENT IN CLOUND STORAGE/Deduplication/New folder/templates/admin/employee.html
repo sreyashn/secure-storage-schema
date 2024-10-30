@@ -1,0 +1,73 @@
+
+{% include 'admin/admin_header.html' %}
+<style>
+    table td{
+    color:white;
+    }
+</style>
+<center>
+    <h1 style="color:white">Registration</h1><br>
+<form action=""method="post">
+    <table>
+        <tr>
+            <td>Firstname</td>
+            <td><input type="text" name="Firstname"></td>
+        </tr>
+        <tr>
+            <td>Lastname</td>
+            <td><input type="text" name="Lastname"></td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td><input type="text" name="Age"></td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td><input type="text" name="Phone"></td>
+        </tr>
+        <tr>
+            <td>E-mail</td>
+            <td><input type="email" name="Email" required></td>
+        </tr>
+        <tr>
+            <td>Housename</td>
+            <td><input type="text" name="Housename"></td>
+        </tr>
+        <tr>
+            <td>Place</td>
+            <td><input type="text" name="Place"></td>
+        </tr>
+        <tr>
+            <td>Pincode</td>
+            <td><input type="text" name="Pincode"></td>
+        </tr>
+        <tr>
+            <td>Username</td>
+            <td><input type="text" name="Username"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="Password"></td>
+        </tr>
+        <tr>
+            <td>Retype password</td>
+            <td><input type="password" name="retype"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><input type="submit" name="Registration" value="Submit"></td>
+        </tr>
+
+
+
+
+    </table>
+
+
+
+</form>
+
+
+</center>
+{% include 'admin/admin_footer.html' %}

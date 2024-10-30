@@ -1,0 +1,42 @@
+{% include 'admin/admin_header.html' %}
+<div class="custom">
+
+    <table>
+        <thead>
+            <tr>
+            <th>File name</th>
+            <th>Employee_Id</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Restore</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for row in data %}
+            <tr>
+                <td>{{row['filename']}}</td>
+                <td>{{row['user_id']}}</td>
+                <td>{{row['date']}}</td>
+                <td>{{row['status']}}
+                <td>
+                <a href="/admin_restore?req_id={{row['req_id']}}&user_id={{row['user_id']}}&file_id={{row['file_id']}}&restore=1">Restore</a>
+                </td>
+
+            </tr>
+       {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+{% include 'admin/admin_footer.html' %}

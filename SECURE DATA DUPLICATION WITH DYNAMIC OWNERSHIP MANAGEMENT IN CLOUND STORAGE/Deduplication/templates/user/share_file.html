@@ -1,0 +1,62 @@
+
+{% include 'user/user_header.html' %}
+
+<div class="custom">
+
+<center>
+    <form action="" method="post">
+    	<h1>Share to</h1>
+        <table border="5"width="50%" style="border-color:white">
+            <tr>
+                <td>Emp_id</td>
+                <td>Firstname</td>
+                <td>Lastname</td>
+                <td>Age</td>
+                <td>Phone</td>
+                <td>Email</td>
+                <td>House_name</td>
+                <td>Place</td>
+                <td>Pincode</td>
+                <td>Share</td>
+            </tr>
+            {% for row in employees %}
+            <tr>
+                <td>
+                    {{row['emp_id']}}
+                </td>
+                <td>
+                    {{row['first_name']}}
+                </td>
+                <td>
+                    {{row['last_name']}}
+                </td>
+                <td>
+                    {{row['age']}}
+                </td>
+                <td>
+                    {{row['phone']}}
+                </td>
+                <td>
+                    {{row['email']}}
+                </td>
+                <td>
+                    {{row['house_name']}}
+                </td>
+                <td>
+                    {{row['place']}}
+                </td>
+                <td>
+                    {{row['pincode']}}
+                </td>
+                <td>
+                    <a href="?emp_id={{row['emp_id']}}&file_id={{file_id}}&share=1">Share</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+
+    </form>
+
+</center>
+</div>
+{% include 'user/user_footer.html' %}

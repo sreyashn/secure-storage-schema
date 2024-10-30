@@ -1,0 +1,38 @@
+{% include 'user/user_header.html' %}
+
+<div class="custom">
+
+    <table>
+        <thead>
+            <tr>
+            <th>File_Path</th>
+            <th>Date</th>
+            <th>Satus</th>
+            <th>Download</th>
+            <th>Request</th>
+            <th>Restore</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for row in data %}
+            <tr>
+
+                <td>{{row['file_path']}}</td>
+                <td>{{row['date']}}</td>
+                <td>{{row['status']}}
+                <td><a href="/download?file_id={{row['file_id']}}">Download</a></td>
+                <td>
+                    <a href="?emp_id={{row['emp_id']}}&file_id={{row['file_id']}}&delete=1">Delete</a>
+                </td>
+                <td>
+                    <a href="?emp_id={{row['emp_id']}}&file_id={{row['file_id']}}&restore=1">Restore</a>
+                </td>
+
+            </tr>
+       {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+
+{% include 'user/user_footer.html' %}

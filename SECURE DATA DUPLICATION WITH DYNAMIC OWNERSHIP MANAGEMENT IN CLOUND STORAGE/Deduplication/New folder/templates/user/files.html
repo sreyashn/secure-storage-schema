@@ -1,0 +1,30 @@
+{% include 'user/user_header.html' %}
+<style>
+    table td{
+    color:white;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Files</title>
+</head>
+<body>
+<center>
+    <h>File Upload</h>
+<form action="" method="post" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <td>Filepath...</td>
+            <td><input type="file" name="file_path"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" name="upload" value="Upload"></td>
+        </tr>
+    </table>
+
+</form>
+</center>
+</body>
+</html>
+{% include 'user/user_footer.html' %}

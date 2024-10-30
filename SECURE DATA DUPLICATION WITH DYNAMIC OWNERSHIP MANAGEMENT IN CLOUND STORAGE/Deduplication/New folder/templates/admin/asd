@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adminheader</title>
+</head>
+<body>
+<center>
+
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td> <a href="/employee">Register Employee</a> </td>
+            </tr>
+            <tr>
+                <td> <a href="/employee_view">View Empolyees</a> </td>
+            </tr>
+            <tr>
+                <td> <a href="history_view">View File History</a> </td>
+            </tr>
+        </table>
+
+    </form>
+</center>
+login
+<div class="ban-form text-left">
+			<h5>Account Open Now</h5>
+			<form action="#" class="mt-4" method="post">
+				<input class="form-control" type="text" name="Name" placeholder="Name" required="" />
+				<input class="form-control" type="email" name="Email" placeholder="Email" required="" />
+				<input class="form-control" type="text" name="Number" placeholder="Phone Number" required="" />
+				<input class="form-control text-uppercase" type="submit" value="Create Account">
+			</form>
+		</div>
+
+		user header
+		<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>userheader</title>
+</head>
+<body>
+<center>
+<form action="" method="post">
+    <h1>welcome</h1>
+    <table>
+        <tr>
+            <td><a href="/files">Upload files</a> </td>
+        </tr>
+        <tr>
+            <td><a href="/history_view">View Upload History</a> </td>
+        </tr>
+    </table>
+
+</form>
+</center>
+</body>
+</html>

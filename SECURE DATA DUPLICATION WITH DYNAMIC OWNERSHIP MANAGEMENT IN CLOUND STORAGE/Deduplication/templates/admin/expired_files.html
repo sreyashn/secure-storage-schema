@@ -1,0 +1,31 @@
+{% include 'admin/admin_header.html' %}
+<div class="custom">
+	<h1>Exp files</h1>
+	<a href="?action=delete_all" class="btn btn-danger">Delete all</a>
+<center>
+    <form action="" method="post">
+
+        <table border="1" width="50%" style="border-color:white">
+            <tr>
+                <td>File_id</td>
+                <td>Dup file path</td>
+                <td>Date</td>
+            </tr>
+            {% for row in data %}
+            <tr>
+                <td>
+                    {{row['file_id']}}
+                </td>
+                <td>
+                    {{row['dup_filename']}}
+                </td>
+                <td>
+                    {{row['date']}}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </form>
+</center>
+</div>
+{% include 'admin/admin_footer.html' %}

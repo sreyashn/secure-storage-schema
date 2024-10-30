@@ -1,0 +1,23 @@
+{% include 'public/public_header.html' %}
+<div class="ban-form text-left">
+	<h5>Login</h5>
+	<form action="" class="mt-4" method="post">
+		<input class="form-control" type="text" name="username" id="username" placeholder="Username" required="" />
+		<input class="form-control" type="password" name="password" id="password" placeholder="Password" required="" />
+		<input class="form-control text-uppercase" id="login" name='login' type="submit" value="Login">
+	</form>
+</div>
+
+{% include 'public/public_footer.html' %}
+<script>
+		$('#username').keyup(function(){
+			var username=$('#username').val()
+			var user=username.toLowerCase()
+			$('#username').val(user)
+		})
+		$('#password').keyup(function(){
+			var password=$('#password').val()
+			var pass=password.toLowerCase()
+			$('#password').val(pass)
+		})
+</script>

@@ -1,0 +1,51 @@
+{% include 'admin/admin_header.html' %}
+<center>
+    <style>
+    table td{
+    color:white;
+    }
+    </style>
+     <h1>Update</h1>
+<form action=""method="post">
+    <table>
+        <tr>
+            <td>Firstname</td>
+            <td><input type="text" name="Firstname" value="{{data[0]['first_name']}}"></td>
+        </tr>
+        <tr>
+            <td>Lastname</td>
+            <td><input type="text" name="Lastname" value="{{data[0]['last_name']}}"></td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td><input type="text" name="Age" value="{{data[0]['age']}}"></td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td><input type="text" name="Phone" value="{{data[0]['phone']}}"></td>
+        </tr>
+        <tr>
+            <td>E-mail</td>
+            <td><input type="email" name="Email" required value="{{data[0]['email']}}"></td>
+        </tr>
+        <tr>
+            <td>Housename</td>
+            <td><input type="text" name="Housename" value="{{data[0]['house_name']}}"></td>
+        </tr>
+        <tr>
+            <td>Place</td>
+            <td><input type="text" name="Place" value="{{data[0]['place']}}"></td>
+        </tr>
+        <tr>
+            <td>Pincode</td>
+            <td><input type="text" name="Pincode" value="{{data[0]['pincode']}}"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" name="update" value="update"></td>
+        </tr>
+    </table>
+</form>
+
+</center>
+{% include 'admin/admin_footer.html' %}
